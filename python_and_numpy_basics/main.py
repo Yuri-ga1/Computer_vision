@@ -17,7 +17,7 @@ def nominal_resolution():
         else:
             print("There is no image")
 
-def work_with_file(filename):
+def figure_searching(filename):
     offset=[0,0]
     y=0
     x=0
@@ -44,8 +44,8 @@ def work_with_file(filename):
 
 files=["img1.txt","img2.txt"]
 
-offsetimg1 = work_with_file(files[0])
-offsetimg2 = work_with_file(files[1])
+offsetimg1 = figure_searching(files[0])
+offsetimg2 = figure_searching(files[1])
 
 print(f"Offset of the first relative to the second(y, x): {offsetimg1[1]-offsetimg2[1],offsetimg2[0]-offsetimg1[0]}", end='\n\n\n')
 
